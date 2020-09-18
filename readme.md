@@ -96,18 +96,34 @@
 (1) 	Chen, K.; Zhang, D.; Yao, L.; Guo, B.; Yu, Z.; Liu, Y. Deep Learning for Sensor-Based Human Activity Recognition: Overview, Challenges and Opportunities. ArXiv200107416 Cs 2020. 
 
 (2) 	Moldovan, D.; Cioara, T.; Anghel, I.; Salomie, I. Machine Learning for Sensor-Based Manufacturing Processes. In 2017 13th IEEE International Conference on Intelligent Computer Communication and Processing (ICCP); 2017; pp 147–154. https://doi.org/10.1109/ICCP.2017.8116997.
+
 (3) 	Majumder, S.; Deen, M. J. Smartphone Sensors for Health Monitoring and Diagnosis. Sensors 2019, 19 (9). https://doi.org/10.3390/s19092164.
+
+
 (4) 	Li, X.; Zhang, Y.; Li, M.; Marsic, I.; Yang, J.; Burd, R. S. Deep Neural Network for RFID-Based Activity Recognition. Proc. Eighth Wirel. Stud. Stud. Stud. Workshop Workshop Wirel. Stud. Stud. Stud. 8th 2016 N. Y. N 2016, 2016, 24–26. https://doi.org/10.1145/2987354.2987355.
+
 (5) 	Ishimaru, S.; Hoshika, K.; Kise, K.; Dengel, A.; Kunze, K. S. Towards Reading Trackers in the Wild: Detecting Reading Activities by EOG Glasses and Deep Neural Networks. In UbiComp/ISWC 2017 - Adjunct Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers; Association for Computing Machinery, Inc, 2017; pp 704–711. https://doi.org/10.1145/3123024.3129271.
+
+
 (6) 	Grzeszick, R.; Lenk, J. M.; Rueda, F. M.; Fink, G. A.; Feldhorst, S.; ten Hompel, M. Deep Neural Network Based Human Activity Recognition for the Order Picking Process. In Proceedings of the 4th international Workshop on Sensor-based Activity Recognition and Interaction; iWOAR ’17; Association for Computing Machinery: New York, NY, USA, 2017; pp 1–6. https://doi.org/10.1145/3134230.3134231.
+
+
 (7) 	Abramson, D.; Fu, D.; Johnson, J. E. Cryptocurrency System Using Body Activity Data, March 26, 2020.
+
 (8) 	The Complete Guide to Machine Learning for Sensors and Signal Data. Reality AI.
+
 (9) 	UCI Machine Learning Repository: Human Activity Recognition from Continuous Ambient Sensor Data Data Set https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+from+Continuous+Ambient+Sensor+Data (accessed Sep 16, 2020).
+
 (10) 	scipy.fft.fft — SciPy v1.5.2 Reference Guide https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fft.html (accessed Sep 17, 2020).
+
 (11) 	scipy.signal.welch — SciPy v1.5.2 Reference Guide https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html (accessed Sep 17, 2020).
+
 (12) 	numpy.correlate — NumPy v1.19 Manual https://numpy.org/doc/stable/reference/generated/numpy.correlate.html (accessed Sep 17, 2020).
+
 (13) 	Continuous Wavelet Transform (CWT) — PyWavelets Documentation https://pywavelets.readthedocs.io/en/latest/ref/cwt.html (accessed Sep 17, 2020).
-(14) 	admin. A guide for using the Wavelet Transform in Machine Learning. Ahmet Taspinar, 2018.
+
+(14) 	Ahmet Taspinar. A guide for using the Wavelet Transform in Machine Learning. Ahmet Taspinar, 2018.
+
 (15) 	scikit-learn: machine learning in Python — scikit-learn 0.23.2 documentation https://scikit-learn.org/stable/ (accessed Sep 17, 2020).
 
 
