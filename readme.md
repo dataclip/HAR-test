@@ -80,7 +80,7 @@
 2. ML and DL models were used to classify six human activities. RFC & GBC both provided good performances with macro averaged F1-scores of 94.2 and 93.8%, respectively.
 3. To reduce computational cost a lower number of training & testing samples were used for CNN model training using a wavelet transformation feature extraction, which provided a macro averaged F1 score of 92.5%.
 
-### Role of Udacity’s Microsoft Azure Foundation course
+### Role of Udacity’s Microsoft Azure Scholarship Foundation course
 &emsp; Concepts learned from the foundation course were extensively used in this project. Feature selection and engineering were specifically used, along with “train a classifier” lessons from lesson 3. The task used in this project was  supervised learning, which was discussed in Lesson 4. Concepts of feature learning was discussed in lesson 5, which I used to extract features from sensor data. The data is obtained from a public dataset and does not violate any privacy laws as far as my knowledge, and it was used responsibly, which is the theme of lesson 7. It would have been better if I could run the notebooks and deploy the ML models as a webservice using Azure. The idea was to run the notebook locally for experimentation and then transfer the trained model to Azure for scale. Unfortunately, time did not permit but I’ll be working on it as the next steps of the project.
 
 ### Modules and notebooks
