@@ -34,8 +34,8 @@
 &emsp; The time-domain signals were converted to frequency domain by Fast Fourier Transformation (FFT) [10], power spectral density (PSD) conversion [11], autocorrelation [12] and wavelet transformation [13]. The spectra obtained from the first three transformations were first smoothed by Savitzky-Golay filter followed by finding top 5 most intense peaks. Figures 3 shows FFT and PSD representations of a walking signal with the detected peaks.
 
 <table><tr>
-<td> <img src="Figures/FFT.png" alt="Drawing" style="width: 400px;"/> </td>
-<td> <img src="Figures/PSD.png" alt="Drawing" style="width: 400px;"/> </td>
+<td> <img src="Figures/fft.png" alt="Drawing" style="width: 400px;"/> </td>
+<td> <img src="Figures/psd.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
 #### <i> Figure 3: FFT and PSD transformations of a walking signal. The peaks detected n are also shown. Frequencies and intensities of top 5 most intense peaks were chosen for input feature matrix.
