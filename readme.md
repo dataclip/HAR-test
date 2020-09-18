@@ -93,7 +93,8 @@
 
 ### References
 
-(1) 	Chen, K.; Zhang, D.; Yao, L.; Guo, B.; Yu, Z.; Liu, Y. Deep Learning for Sensor-Based Human Activity Recognition: Overview, Challenges and Opportunities. ArXiv200107416 Cs 2020.
+(1) 	Chen, K.; Zhang, D.; Yao, L.; Guo, B.; Yu, Z.; Liu, Y. Deep Learning for Sensor-Based Human Activity Recognition: Overview, Challenges and Opportunities. ArXiv200107416 Cs 2020. 
+
 (2) 	Moldovan, D.; Cioara, T.; Anghel, I.; Salomie, I. Machine Learning for Sensor-Based Manufacturing Processes. In 2017 13th IEEE International Conference on Intelligent Computer Communication and Processing (ICCP); 2017; pp 147–154. https://doi.org/10.1109/ICCP.2017.8116997.
 (3) 	Majumder, S.; Deen, M. J. Smartphone Sensors for Health Monitoring and Diagnosis. Sensors 2019, 19 (9). https://doi.org/10.3390/s19092164.
 (4) 	Li, X.; Zhang, Y.; Li, M.; Marsic, I.; Yang, J.; Burd, R. S. Deep Neural Network for RFID-Based Activity Recognition. Proc. Eighth Wirel. Stud. Stud. Stud. Workshop Workshop Wirel. Stud. Stud. Stud. 8th 2016 N. Y. N 2016, 2016, 24–26. https://doi.org/10.1145/2987354.2987355.
