@@ -130,7 +130,7 @@ def plot_stem (x, y, title):
 def plot_feature(x, y, feature):
     '''
     input: frequencies and intensities as lists (x, y). title is user defined title for features, FFT, PSD, etc.
-    output: baseline smoothed frequency spectra with peak detection
+    output: baseline smoothed spectrum with peak detection
     
     '''
     baseObj=BaselineRemoval(y)
