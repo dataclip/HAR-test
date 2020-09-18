@@ -68,7 +68,7 @@
 &emsp; CNN model was trained with a smaller train size (5000 samples), and it did performed slightly worse than RFC and GBC, F1 macro averaged score of CNN model is 92.5%. Figure 6 shows classification report and confusion matrix.
 <table><tr>
 <td> <img src="Figures/cnn-cr.png" alt="Drawing" style="width: 400px;"/> </td>
-<td> <img src="Figures/cnn-cf.png" alt="Drawing" style="width: 400px;"/> </td>
+<td> <img src="Figures/cnn-cF.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
 #### *Figure 6: Classification report and confusion matrix for the CNN model.*
