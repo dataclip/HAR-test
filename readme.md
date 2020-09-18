@@ -84,7 +84,7 @@
 &emsp; Concepts learned from the foundation course were extensively used in this project. Feature selection and engineering were specifically used, along with “train a classifier” lessons from lesson 3. The task used in this project was  supervised learning, which was discussed in Lesson 4. Concepts of feature learning was discussed in lesson 5, which I used to extract features from sensor data. The data is obtained from a public dataset and does not violate any privacy laws as far as my knowledge, and it was used responsibly, which is the theme of lesson 7. It would have been better if I could run the notebooks and deploy the ML models as a webservice using Azure. The idea was to run the notebook locally for experimentation and then transfer the trained model to Azure for scale. Unfortunately, time did not permit but I’ll be working on it as the next steps of the project.
 
 ### Modules and notebooks
-1. uca-har-eda.ipynb: contains basic EDA reported in this report.
+1. uci-har-eda.ipynb: contains basic EDA reported in this report.
 2. model-results.ipynb: contains SVC, RFC and GBC model training and evaluation.
 3. cnn-results.ipynb: contains CNN model training and evaluation.
 4. utils.py contains utility functions, for example load_data, plot_stem etc.
