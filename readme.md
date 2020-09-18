@@ -1,5 +1,7 @@
 ## Application of Machine Learning in Human Activity Recognition
 
+### Author: Bis
+
 ### Introduction 
 
 &emsp; Activity recognition has attracted considerable attention in the recent years with the advancement of sensor technologies. Smart sensors are enabled by internet of things (IoT) to send and receive data in unprecedented scale which unfolds a myriad of applications in our daily lives [1], manufacturing [2], healthcare [3-4]  smart homes [5] etc. Human activity recognition has been used to some very interesting applications, for example, in the order picking process [6], RFID based activity detection [4], smart reading activities using electrooculography (EOG) glasses [5], cryptocurrency mining [7], and many more. 
