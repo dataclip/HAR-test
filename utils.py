@@ -19,7 +19,7 @@ def load_data(train_folder, test_folder, train_labels, test_labels):
     """
     loads train and test signals and labels
     input: train and test signal and label folder in .txt form
-    output:numpy ndarray of train, test signals and labels
+    returns numpy ndarray of train, test signals and labels
     """
     train_pathlist = sorted(Path(train_folder).rglob('*.txt'))
     test_pathlist = sorted(Path(test_folder).rglob('*.txt'))
@@ -41,9 +41,7 @@ def load_data(train_folder, test_folder, train_labels, test_labels):
 def get_classification_results(models, X_train, X_test, y_train, y_test):
     
     """
-    inputs:
-    models: Dictionary of ML models with Gridsearch parameters.
-    output:
+    input: Dictionary of ML models with Gridsearch parameters.
     Prints classification reports and confusion matrices.
    """
     
@@ -84,9 +82,7 @@ def get_classification_results(models, X_train, X_test, y_train, y_test):
 def get_cnn_cf_matrix(model, X_test_tensor, test_labels):
     
     """
-    inputs:
-    model: CNN model, test data in tensor form, test labels.
-    output:
+    input: CNN model, test data in tensor form, test labels.
     Prints classification reports and confusion matrices.
     """
     
@@ -115,8 +111,7 @@ def get_cnn_cf_matrix(model, X_test_tensor, test_labels):
 def plot_stem (x, y, title):
     """
     input: frequencies and intensities as lists (x, y). title is user defined title
-    output: Stem plot
-    
+    returns stem plot
     """
     plt.figure(figsize=[8, 6])
     plt.stem(x, y, use_line_collection=True)
@@ -130,8 +125,7 @@ def plot_stem (x, y, title):
 def plot_feature(x, y, feature):
     """
     input: frequencies and intensities as lists (x, y). title is user defined title for features, FFT, PSD, etc.
-    output: baseline smoothed spectrum with peak detection
-    
+    returns baseline smoothed spectrum with peak detection
     """
     baseObj=BaselineRemoval(y)
     y=baseObj.ModPoly(2)
@@ -145,9 +139,3 @@ def plot_feature(x, y, feature):
     plt.ylabel('amplitude')
     plt.title(feature)
     plt.show()    
-
-
-
-
-
-
