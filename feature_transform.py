@@ -6,12 +6,12 @@ from BaselineRemoval import BaselineRemoval
 
 class FeatureTransform:
     """
-    A class which accepts a time series signal and convert them into frequency domain to create features for ML models.
+    A class which accepts a time series signal and converts those into frequency domain to extract features for ML models.
     There are several transformation available:
     get_ffts: provides frequencies and intensities.
     get_psds: provides frequencies and power spectral denisity values
     get_autocorrs: provides autocorreltaion values.
-    get_first_n_features: removes baselines, applies a Svazisky-Golay filter, detect peaks and stores first n
+    get_first_n_features: removes baselines, applies a Svazisky-Golay filter, detect peaks and stores user defined first n
     frequencies and intensities.
     """
 
