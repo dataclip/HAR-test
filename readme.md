@@ -1,4 +1,4 @@
-## Application of Machine Learning in Human Activity Recognition##
+## Application of Machine Learning in Human Activity Recognition
 
 ### Introduction 
 
