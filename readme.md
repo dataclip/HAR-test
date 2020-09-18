@@ -19,7 +19,7 @@
 
 ![Image of all-signal](Figures/all-signals.png)
 
-#### <i> Figure 1: Smartphone signals for 6 different activities. Each activity has 9 components. <i>
+#### *Figure 1: Smartphone signals for 6 different activities. Each activity has 9 components.*
 
 &emsp; Figures 2 displays stem plots comparing body accelerations signals of a representative walking and sitting activities along Y-axis. The walking signal clearly shows some well-defined structure while the sitting one has very low intense peaks.
 <table><tr>
@@ -27,7 +27,7 @@
 <td> <img src="Figures/sitting.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
-#### <i> Figure 2: Representative walking (left) and sitting signals (right). Amplitudes of walking signal are higher than that of the sitting. 
+#### *Figure 2: Representative walking (left) and sitting signals (right). Amplitudes of walking signal are higher than that of the sitting.* 
 
 ### Feature Engineering & Data Preprocessing
 	
@@ -38,7 +38,7 @@
 <td> <img src="Figures/psd.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
-#### <i> Figure 3: FFT and PSD transformations of a walking signal. The peaks detected n are also shown. Frequencies and intensities of top 5 most intense peaks were chosen for input feature matrix.
+#### *Figure 3: FFT and PSD transformations of a walking signal. The peaks detected n are also shown. Frequencies and intensities of top 5 most intense peaks were chosen for input feature matrix.*
 
 &emsp; Both frequency and intensity values of top 5 peaks were taken into the input feature matrix. The feature matrix therefore has a total of 270 columns (9 components * (FFT + PSD + Autocorrelation=3) * 5 top peaks * 2 (Freq. + Intensity).  This matrix was used as input for three machine learning algorithms: Support Vector Machine (SVM), Random Forest (RFC) and Gradient boosting (GBC) classifiers.<br>
 
@@ -55,7 +55,7 @@
 <td> <img src="Figures/GB-cr.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
-#### <i> Figure 4: Classification reports for RFC (left) and GBC (right). GBC has slightly higher macro averaged F1 score than that of RFC.
+#### *Figure 4: Classification reports for RFC (left) and GBC (right). GBC has slightly higher macro averaged F1 score than that of RFC.*
 
 &emsp; While both the models did better identify walking activities as well as laying, sitting and standing have relatively worse error rate, as shown in normalized confusion matrices for RFC & GBC in Figure 5. 
 <table><tr>
@@ -63,15 +63,15 @@
 <td> <img src="Figures/GB-CF.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
-#### <i> Figure 5: Confusion matrices for RFC (left) and GBC (right).
+#### *Figure 5: Confusion matrices for RFC (left) and GBC (right).*
 
 &emsp; CNN model was trained with a smaller train size (5000 samples), and it did performed slightly worse than RFC and GBC, F1 macro averaged score of CNN model is 92.5%. Figure 6 shows classification report and confusion matrix.
 <table><tr>
-<td> <img src="Figures/CNN-cr.png" alt="Drawing" style="width: 400px;"/> </td>
-<td> <img src="Figures/CNN-CF.png" alt="Drawing" style="width: 400px;"/> </td>
+<td> <img src="Figures/cnn-cr.png" alt="Drawing" style="width: 400px;"/> </td>
+<td> <img src="Figures/cnn-cf.png" alt="Drawing" style="width: 400px;"/> </td>
 </tr></table>
 
-#### <i> Figure 6: Classification report and confusion matrix for the CNN model.
+#### *Figure 6: Classification report and confusion matrix for the CNN model.*
 
 ### Conclusions
 1. Features were extracted from a sensor dataset using FFT, power spectral density, autocorrelation and wavelet transformation.
