@@ -78,6 +78,104 @@ def get_classification_results(models, X_train, X_test, y_train, y_test):
         sns.heatmap(cf_matrix_normalized_r, annot=True, cmap='Blues')
         plt.show()
         
+
+def train_class(model, num_epochs, bs, train_loader, test_loader, optimizer, criterion):
+    
+   """
+   Trains a CNN classifier and prints train and test results.
+   input: CNN model, number of epochs, batch size, PyTorch train loader and test loaders, optimizer and loss function
+   returns a Pandas dataframe with loss values, plots training and test losses
+   """
+
+    loss_values = {
+        'train': [],
+        'test': []
+    }
+
+    accuracy_values = {
+        'train': [],
+        'test': []
+    }
+
+    final_loss_df = pd.DataFrame()
+    final_acc_df = pd.DataFrame()
+
+    for epoch in range(num_epochs):
+        start = timer()
+        model.train()
+        avg_training_loss = 0.
+        correct = 0.
+
+        for i, (inputs, labels) in enumerate(train_loader):
+            inputs, labels = Variable(inputs), Variable(labels)
+            if torch.cuda.is_available():
+                inputs = inputs.cuda()
+                labels = labels.cuda()
+
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            avg_training_loss += loss.item() / len(train_loader)
+#             correct += (outputs == labels).float().sum()
+        loss_values['train'].append(avg_training_loss)
+#         accuracy_values['train'].append((100 * correct // len(X_train_tensor)))
+
+        model.eval()
+        avg_test_loss = 0.
+        correct = 0.
+
+        for i, (inputs, labels) in enumerate(test_loader):
+
+            inputs, labels = Variable(inputs), Variable(labels)
+            if torch.cuda.is_available():
+                inputs = inputs.cuda()
+                labels = labels.cuda()
+
+            outputs = model(inputs)
+            loss = criterion(outputs, labels) # Calculate the loss
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            avg_test_loss += loss.item() / len(train_loader)
+#             correct += (outputs == labels).float().sum()
+        loss_values['test'].append(avg_test_loss)
+#         accuracy_values['train'].append((100 * correct // len(X_train_tensor)))
+
+        end = timer()
+        elapsed_time = end - start
+
+        if epoch % 10 == 1:
+            print('Epoch {}/{} \t loss={:.4f} \t test_loss={:.4f} \t time={:.2f}s'.format(
+                epoch + 1, num_epochs, avg_training_loss, avg_test_loss, elapsed_time))
+#     print(loss_values)
+    loss_df = pd.DataFrame.from_dict(loss_values)
+#     acc_df = pd.DataFrame.from_dict(accuracy_values)
+    final_loss_df = final_loss_df.append(loss_df)
+#     final_acc_df = final_acc_df.append(acc_df)
+    final_loss_df['epoch'] = final_loss_df.index
+    final_loss_df = final_loss_df.groupby('epoch').mean().reset_index()
+
+    print('average fold losses: \n', final_loss_df)
+#     print('average fold losses: \n', final_acc_df)
+    plt.plot(final_loss_df.epoch, final_loss_df.train, label='train')
+    plt.plot(final_loss_df.epoch, final_loss_df.test, label='test')
+    plt.legend()
+    plt.show()
+    plt.savefig('train_test_plot.jpg')
+    with torch.no_grad():
+        output = model(X_test_tensor[0:1000])
+    pred = np.argmax(output, axis=1)
+    report = classification_report(test_labels[0:1000], pred, output_dict=True)
+    df = pd.DataFrame(report).transpose()
+    display(df)
+    cf_matrix = confusion_matrix(pred, test_labels[0:1000])
+    plt.figure(figsize=[8, 6])
+    cf_matrix_normalized = cf_matrix / cf_matrix.astype(np.float).sum(axis=1)
+    sns.heatmap(cf_matrix_normalized, annot=True, cmap='Blues')
+    plt.show()
+        
         
 def get_cnn_cf_matrix(model, X_test_tensor, test_labels):
     
