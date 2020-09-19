@@ -23,7 +23,7 @@
 
 #### *Figure 1: Smartphone signals for 6 different activities. Each activity has 9 components.*
 
-&emsp; Figures 2 displays stem plots comparing body accelerations signals of a representative walking and sitting activities along Y-axis. The walking signal clearly shows some well-defined structure while the sitting one has very low intense peaks.
+&emsp; Figure 2 displays stem plots comparing body accelerations signals of representative walking and sitting activities along Y-axis. The walking signal clearly shows some well-defined structure while the sitting one has very low intense peaks.
 <table><tr>
 <td> <img src="Figures/walking.png" alt="Drawing" style="width: 400px;"/> </td>
 <td> <img src="Figures/sitting.png" alt="Drawing" style="width: 400px;"/> </td>
