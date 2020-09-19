@@ -164,18 +164,7 @@ def train_class(model, num_epochs, bs, train_loader, test_loader, optimizer, cri
     plt.legend()
     plt.show()
     plt.savefig('train_test_plot.jpg')
-    with torch.no_grad():
-        output = model(X_test_tensor[0:1000])
-    pred = np.argmax(output, axis=1)
-    report = classification_report(test_labels[0:1000], pred, output_dict=True)
-    df = pd.DataFrame(report).transpose()
-    display(df)
-    cf_matrix = confusion_matrix(pred, test_labels[0:1000])
-    plt.figure(figsize=[8, 6])
-    cf_matrix_normalized = cf_matrix / cf_matrix.astype(np.float).sum(axis=1)
-    sns.heatmap(cf_matrix_normalized, annot=True, cmap='Blues')
-    plt.show()
-        
+            
         
 def get_cnn_cf_matrix(model, X_test_tensor, test_labels):
     
