@@ -87,7 +87,7 @@
 1. uci-har-eda.ipynb: contains basic EDA reported in this report.
 2. model-results.ipynb: contains SVC, RFC and GBC model training and evaluation.
 3. cnn-results.ipynb: contains CNN model training and evaluation.
-4. utils.py contains utility functions, for example load_data, plot_stem etc.
+4. utils.py contains utility functions, for example load_data, train_class, plot_stem etc.
 5. feature_transform.py contains FeatureTransform class which was used to extract FFT and other features from the sensor dataset.
 6. network.py contains CNN architecture implementation using PyTorch.
 
